@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'controlador/index.css' %}"/>
+    <title>My Stock</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Biblioteca</h1>
+        <div class="content">
+            <div class="items">
+                <dl>
+                    <dt>livro</dt>
+                    <dd>Dan Brown - fortaleza Digital</dd>
+                </dl>
+                <div>
+                    <button class="btn1">Editar</button>
+                    <button class="btn2">Escluir</button>
+                </div>
+                
+            </div>
+
+            <div class="add">
+                <button>
+                    +
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
