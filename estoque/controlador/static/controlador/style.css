@@ -1,0 +1,100 @@
+body {
+    background: lightgray;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    border: 1px solid rgb(146, 137, 137);
+    width: 70vw;
+    height: 60vh;
+    margin-top: 10px;
+    background-color:rgb(196, 192, 192) ;
+
+    border-radius: 2px;
+}
+
+.content .items {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    border-radius: .5rem;
+    background-color: rgb(172, 166, 166);
+}
+
+.content .items .btn1{
+    background-color: #008CBA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: black;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
+}
+
+.content .items .btn1:hover{
+    background-color: #0ad6fa;
+    color: white;
+    border: 2px solid #0ad6fa;
+}
+
+.content .items .btn2{
+
+    background-color: #f44336;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: black;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+}
+
+.content .items .btn2:hover{
+    background-color: #fc3021;
+    color: white;
+    border: 2px solid #fc3021;
+  }
+
+.content .add {
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.content .add button{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+}
+
+.content .add button:hover {
+    background-color: #3be240;
+    color: white;
+    border: 2px solid #3be240;
+  }
+    

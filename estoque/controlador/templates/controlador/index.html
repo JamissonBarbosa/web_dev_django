@@ -1,13 +1,13 @@
-
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'controlador/index.css' %}"/>
-    <title>My Stock</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{% static 'controlador/style.css' %}"/>
+    <title>Biblioteca</title>
 </head>
 <body>
     <div class="container">
@@ -15,19 +15,21 @@
         <div class="content">
             <div class="items">
                 <dl>
+                    {% for livros in prateleira %}
                     <dt>livro</dt>
                     <dd>Dan Brown - fortaleza Digital</dd>
+                    {% endfor %}
                 </dl>
                 <div>
                     <button class="btn1">Editar</button>
-                    <button class="btn2">Escluir</button>
+                    <button class="btn2">Excluir</button>
                 </div>
                 
             </div>
 
             <div class="add">
                 <button>
-                    +
+                    <i class="material-icons">add</i>
                 </button>
             </div>
         </div>
