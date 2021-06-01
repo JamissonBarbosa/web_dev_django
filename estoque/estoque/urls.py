@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from controlador.views import landing_page
+from controlador.views import landing_page, exibir_form, update, delete
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', landing_page)
+    path('home/', landing_page, name='url_landing_page'),
+    path('update/<int:pk>', update, name='url_update'),
+    path('delete/<int:pk>', delete, name='url_delete'),
+    path('exibir/', exibir_form, name='url_exibir')
 ]

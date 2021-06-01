@@ -14,22 +14,31 @@
         <h1>Biblioteca</h1>
         <div class="content">
             <div class="items">
-                <dl>
-                    {% for livros in prateleira %}
-                    <dt>livro</dt>
-                    <dd>Dan Brown - fortaleza Digital</dd>
-                    {% endfor %}
-                </dl>
-                <div>
-                    <button class="btn1">Editar</button>
-                    <button class="btn2">Excluir</button>
-                </div>
                 
+                {% for prateleira in prateleiras %}
+                    
+                    <div>
+                        <h1>{{prateleira.product_name}}</h1>
+                        <p>{{prateleira.product_describe}}</p>
+                        
+                        
+                        <a href="{% url 'url_update' prateleira.id %}" class="btn1">Editar</a>
+                        
+                        <a href="{% url 'url_delete' prateleira.id %}" class="btn2">Excluir</a>
+                        
+                    </div>
+                    
+                {% endfor %}
+                
+                
+
             </div>
 
             <div class="add">
                 <button>
-                    <i class="material-icons">add</i>
+                    <a href="{% url 'url_exibir' %}">
+                        <i class="material-icons">add</i>
+                    </a>
                 </button>
             </div>
         </div>

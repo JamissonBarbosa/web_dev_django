@@ -6,4 +6,4 @@ class Prateleira(models.Model):
     product_describe = models.CharField(max_length=200)
     
     def  __str__(self):
-        return self.product_name
+        return self.product_name, self.product_describe
