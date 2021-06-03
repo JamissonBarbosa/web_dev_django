@@ -11,26 +11,28 @@
 </head>
 <body>
     <div class="container">
+
         <h1>Biblioteca</h1>
         <div class="content">
+
             <div class="items">
                 
                 {% for prateleira in prateleiras %}
                     
+                    <div class="items-intro">
                     <div>
                         <h1>{{prateleira.product_name}}</h1>
                         <p>{{prateleira.product_describe}}</p>
-                        
-                        
+                    </div>
+
+                    <div>
                         <a href="{% url 'url_update' prateleira.id %}" class="btn1">Editar</a>
                         
                         <a href="{% url 'url_delete' prateleira.id %}" class="btn2">Excluir</a>
-                        
+                    </div>
                     </div>
                     
-                {% endfor %}
-                
-                
+                {% endfor %}       
 
             </div>
 

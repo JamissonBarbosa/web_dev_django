@@ -12,24 +12,38 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
     border: 1px solid rgb(146, 137, 137);
-    width: 70vw;
-    height: 60vh;
+    width: 70%;
+    height: 60%;
     margin-top: 10px;
     background-color:rgb(196, 192, 192) ;
 
     border-radius: 2px;
 }
 
-.content .items {
-    display: flex;
+.content .items{
+    display: block;
     justify-content: space-between;
-    margin: 10px;
+    align-items: center;
+    
+    width: 90%;
+
     padding: 10px;
-    border-radius: .5rem;
+    border-radius: 40px;
     background-color: rgb(172, 166, 166);
+    margin-top: 10px;
+}
+.items-intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(146, 137, 137);
+    border-radius: 10px;
+    margin-top: 10px
 }
 
 .content .items .btn1{
@@ -68,9 +82,9 @@ body {
 }
 
 .content .items .btn2:hover{
-    background-color: #fc3021;
+    background-color: #f7756c;
     color: white;
-    border: 2px solid #fc3021;
+    border: 2px solid #f7756c;
   }
 
 .content .add {
