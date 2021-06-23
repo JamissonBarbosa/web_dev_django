@@ -1,4 +1,4 @@
-# aula01_git
+# Projeto - Sistema de Cadastro
 
 Sistema de cadrastro de produtos
 
@@ -9,9 +9,9 @@ Também é possivel alterações nos produtos e deleta-los
 
 Para executar o projeto é recomendade criar um ambiente virtual 
 Com seu ambiente virtual configurado, instale as seguintes dependências
-
+```xml
 pip install -r requirements.txt
-
+```
 Crie as migrations com:
 
 python manage.py makemigrations
@@ -20,6 +20,6 @@ Para efetivar as Migrations no banco de dados:
 
 python manage.py migrate
 
-#Execução
+# Execução
 
 python manage.py runserver
