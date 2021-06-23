@@ -5,14 +5,21 @@ Sistema de cadrastro de produtos
 Utilizando operações CRUD é possível add produtos e suas descrições.
 Também é possivel alterações nos produtos e deleta-los
 
-# Execução
+# Instalação
 
-Para executar o projeto é recomendade criar um ambiente virtual: na pasta do projeto, abra o terminal e digite 
+Para executar o projeto é recomendade criar um ambiente virtual 
+Com seu ambiente virtual configurado, instale as seguintes dependências
 
-1. "virtualenv nome_da_env"
-2. source nome_da_env/bin/activate (ativa ambiente virtual)
-3.pip install django
-4.django-admin startproject nome_do_projeto
-5.cd nome_do_projet
-6. python manage.py runsurver
+pip install -r requirements.txt
 
+Crie as migrations com:
+
+python manage.py makemigrations
+
+Para efetivar as Migrations no banco de dados:
+
+python manage.py migrate
+
+#Execução
+
+python manage.py runserver
