@@ -13,13 +13,16 @@ Com seu ambiente virtual configurado, instale as seguintes dependências
 pip install -r requirements.txt
 ```
 Crie as migrations com:
-
+```xml
 python manage.py makemigrations
+```
 
 Para efetivar as Migrations no banco de dados:
-
+```xml
 python manage.py migrate
+```
 
 # Execução
-
+```xml
 python manage.py runserver
+```
